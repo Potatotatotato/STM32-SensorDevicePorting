@@ -25,7 +25,13 @@ uint8_t VL530LX_init(uint8_t io_2v8, uint16_t timeout); //ok
 #### cpp中类的优势
 1. 防止方法与其他文件重复。按照c语言的语法，要么通过static限制函数作用域，从而防止函数重复；要么给函数名称加上特定的标识符（如前缀）。
 例如，调用VL53L0初始化函数：
-c风格：`VL530LX_init();`
-cpp风格：`sensor.init();`
+c风格：
+```c
+VL530LX_init();
+```
+cpp风格：
+```cpp
+sensor.init();
+```
 2. 变量的归属更加明确。 
 3. 函数可以重载。
