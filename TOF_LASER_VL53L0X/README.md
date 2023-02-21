@@ -8,7 +8,7 @@
 1. keil中c文件不支持`bool`类型，我把所有bool替换为了uint8_t。
 2. 变量声明必须放在函数的最前面。
 3. keil中函数变量无法赋初始值？
-    uint8_t VL530LX_init(uint8_t io_2v8, uint16_t timeout=0); `错误`
+'''uint8_t VL530LX_init(uint8_t io_2v8, uint16_t timeout=0); '''错误
 #### cpp中类的优势
 1. 防止方法与其他文件重复。按照c语言的语法，要么通过static限制函数作用域，从而防止函数重复；要么给函数加上特定的标识符（如前缀）。
 2. 变量的归属更加明确。 
