@@ -7,7 +7,7 @@
 #### 语法问题
 1. keil中c文件不支持`bool`类型，我把所有bool替换为了uint8_t。
 2. 变量声明必须放在函数的最前面。
-3. keil中函数变量无法赋初始值？
+3. keil的c文件中函数变量无法赋初始值？
 ```c
 uint8_t VL530LX_init(uint8_t io_2v8, uint16_t timeout=0); //wrong
 ```
